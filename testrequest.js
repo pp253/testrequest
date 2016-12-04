@@ -121,6 +121,8 @@ function testRequestObject(testRequestUrlList, logFilePath, interval) {
     }
   }
   
+  /*
+  // under development
   this.analyze = (url) => {
     console.log('analyzing...')
     
@@ -159,6 +161,7 @@ function testRequestObject(testRequestUrlList, logFilePath, interval) {
       }
     })
   }
+  */
   
   this.output = (url, outputFilePath) => {
     let urlList = []
