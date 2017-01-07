@@ -165,7 +165,6 @@ function testRequestObject(testRequestUrlList, logFilePath, interval) {
   
   this.output = (url, outputFilePath) => {
     let urlList = []
-    let outputfile = new logObject(outputFilePath || 'output.csv')
     
     if (url instanceof Array)
       urlList = url
@@ -174,6 +173,7 @@ function testRequestObject(testRequestUrlList, logFilePath, interval) {
     else
       return
     
+    let outputfile = new logObject(outputFilePath || 'output.csv')
     outputfile.clear()
     
     log.rline((input) => {
